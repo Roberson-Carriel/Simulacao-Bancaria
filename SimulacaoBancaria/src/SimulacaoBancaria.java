@@ -28,8 +28,8 @@ public class SimulacaoBancaria {
                     System.out.print("\nQual valor a ser depositado ?\n");
                     saldo = scanner.nextInt() + saldo;
                     System.out.println("Saldo atual: " + saldo);
-                    System.out.println("Programa encerrado.");
-                    continuar = false;
+                    //System.out.println("Programa encerrado.");
+                    //continuar = false;
                     break;
                 case 2:
                     // TODO: Ler o valor a ser sacado e verificar/imprimir se há saldo suficiente.
@@ -40,12 +40,12 @@ public class SimulacaoBancaria {
                         if (saldo > saque) {
                             saldo = saldo-saque;
                             System.out.println("Saldo atual: " + saldo);
-                            System.out.println("Programa encerrado.");
-                            continuar = false;
+                            //System.out.println("Programa encerrado.");
+                            //continuar = false;
                         } else{
                             System.out.print("Saldo insuficiente");
-                            System.out.println("Programa encerrado.");
-                            continuar = false;
+                            //System.out.println("Programa encerrado.");
+                            //continuar = false;
                         }
                     break;
                 case 3:
@@ -53,8 +53,8 @@ public class SimulacaoBancaria {
                     // O programa apenas exibirá o saldo atual da conta: "Saldo atual: {saldo com 1 casa decimal}".
                     System.out.print("\nOpção Consultar Saldo Selecionado\n");
                     System.out.print("Saldo atual: " + saldo);
-                    System.out.println("Programa encerrado.");
-                    continuar = false;
+                    //System.out.println("Programa encerrado.");
+                    //continuar = false;
                     break;
                 case 0:
                     System.out.println("Programa encerrado.");
