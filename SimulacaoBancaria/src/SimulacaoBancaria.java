@@ -27,7 +27,7 @@ public class SimulacaoBancaria {
                     System.out.print("\nOpção Depositar Selecionado\n");
                     System.out.print("\nQual valor a ser depositado ?\n");
                     saldo = scanner.nextInt() + saldo;
-                    System.out.println("Saldo atual: " + saldo);
+                    System.out.printf("Saldo atual: %.2f %n" , saldo);
                     //System.out.println("Programa encerrado.");
                     //continuar = false;
                     break;
@@ -39,7 +39,7 @@ public class SimulacaoBancaria {
                     saque = scanner.nextInt();
                         if (saldo > saque) {
                             saldo = saldo-saque;
-                            System.out.println("Saldo atual: " + saldo);
+                            System.out.printf("Saldo atual: %.2f %n" , saldo);
                             //System.out.println("Programa encerrado.");
                             //continuar = false;
                         } else{
@@ -52,7 +52,7 @@ public class SimulacaoBancaria {
                     // TODO: Exibir o saldo atual da conta.
                     // O programa apenas exibirá o saldo atual da conta: "Saldo atual: {saldo com 1 casa decimal}".
                     System.out.print("\nOpção Consultar Saldo Selecionado\n");
-                    System.out.print("Saldo atual: " + saldo);
+                    System.out.printf("Saldo atual: %.2f %n" , saldo);
                     //System.out.println("Programa encerrado.");
                     //continuar = false;
                     break;
